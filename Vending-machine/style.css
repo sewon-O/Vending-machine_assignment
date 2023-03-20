@@ -1,0 +1,277 @@
+/* layout */
+
+body {
+	background: #eae8fe;
+}
+.logo {
+	width: 386px;
+	height: 164px;
+	display: block;
+	vertical-align: top;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	width: 748px;
+	height: 545px;
+	margin: 0 auto;
+	margin-top: 67px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50px 480px;
+	gap: 28px;
+}
+.wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.machine {
+	background: #fff;
+	width: 360px;
+	height: 545px;
+}
+.money {
+	background: #fff;
+	width: 360px;
+	height: 50px;
+}
+
+.get {
+	background: #fff;
+	height: 480px;
+	width: 360px;
+}
+
+.cola {
+	width: 306px;
+	height: 272px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 12px;
+	margin: 31px auto;
+}
+.pay {
+	width: 306px;
+	height: 196px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 200px 94px;
+	grid-template-rows: 33px 33px 106px;
+	gap: 12px;
+}
+
+/* style */
+h2,
+p {
+	font-family: "Noto Sans KR", Verdana, sans-serif;
+}
+
+.cola button > p {
+	font-size: 9px;
+	margin: 0;
+	margin-top: 7px;
+}
+
+.cola button .text-money {
+	border: 1px solid #bdbdbd;
+	width: 70px;
+	height: 22px;
+	border-radius: 50px;
+	background-color: #6327fe;
+	color: #ffffff;
+	font-size: 12px;
+	margin: 0 auto;
+	margin-top: 7px;
+	line-height: 22px;
+}
+
+.cola > button {
+	background-color: #ffffff;
+	border: 1px solid #bdbdbd;
+	border-radius: 10px;
+	box-shadow: 0 0 2px;
+	text-align: center;
+}
+.cola button img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 11px;
+}
+
+.pay > button {
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	box-shadow: 0 0 2px;
+	font-weight: bold;
+}
+button:not(:disabled) {
+	cursor: pointer;
+}
+
+.cola button:hover {
+	border: 3px solid #6327fe;
+}
+
+.btn-soldout {
+	position: relative;
+	overflow: hidden;
+	pointer-events: none;
+}
+.cola button .soldout {
+	position: absolute;
+	vertical-align: top;
+	display: inline;
+	margin: 0;
+	object-fit: cover;
+	left: 0;
+	top: 0;
+}
+.left-money {
+	background-color: #eae8fe;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+}
+.left-money > p {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	line-height: 33px;
+}
+.left-money p:nth-child(1) {
+	margin-left: 10px;
+}
+.left-money p:nth-child(2) {
+	margin-right: 10px;
+}
+.input-money {
+	border-radius: 5px;
+	border: 2px solid #bdbdbd;
+}
+.select-cola {
+	background-color: #eae8fe;
+	border: 2px solid #bdbdbd;
+	border-radius: 4px;
+	overflow-y: scroll;
+}
+.select-cola > div {
+	width: 170px;
+	height: 46px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-bottom: 6px;
+	font-size: 9px;
+	line-height: 46px;
+	font-weight: 500;
+}
+.select-cola > div:nth-child(1) {
+	margin-top: 12px;
+}
+
+.select-red {
+	background: #fff url(../img/red-cola.svg) no-repeat 0.8em center/ 2em;
+	padding-left: 38px;
+}
+.select-green {
+	background: #fff url(../img/green-cola.svg) no-repeat 0.8em center/ 2em;
+	padding-left: 38px;
+}
+.select-orange {
+	background: #fff url(../img/orange-cola.svg) no-repeat 0.8em center/ 2em;
+	padding-left: 38px;
+}
+
+.pay .get-btn {
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	background: #6327fe;
+}
+
+.own-money {
+	width: 306px;
+	height: 32px;
+	background-color: #eae8fe;
+	margin: 9px 27px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+}
+.own-money > p {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	line-height: 32px;
+}
+.own-money p:nth-child(1) {
+	margin-left: 10px;
+}
+.own-money p:nth-child(2) {
+	margin-right: 10px;
+}
+.get p,
+.get h2 {
+	margin: 0;
+}
+.get > h2 {
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 25px;
+}
+.get > p {
+	font-size: 12px;
+	line-height: 12px;
+	padding: 0 27px 0 0;
+	text-align: end;
+	font-weight: 500;
+}
+.get-cola {
+	width: 306px;
+	height: 364px;
+	background-color: #eae8fe;
+	margin: 0 auto;
+	margin-top: 13px;
+	margin-bottom: 6px;
+	border-radius: 4px;
+	border: 1px solid #bdbdbd;
+	overflow-y: scroll;
+}
+.get-cola > div {
+	width: 276px;
+	height: 46px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-bottom: 6px;
+	border-radius: 4px;
+	font-size: 9px;
+	line-height: 46px;
+}
+
+.get-cola > div:nth-child(1) {
+	margin-top: 12px;
+	background: #fff url(../img/red-colar.svg) no-repeat;
+}
+
+.get-red {
+	background: #fff url(../img/red-cola.svg) no-repeat 0.8em center/ 2em;
+	padding-left: 38px;
+}
+.get-green {
+	background: #fff url(../img/green-cola.svg) no-repeat 0.8em center/ 2em;
+	padding-left: 38px;
+}
+.get-orange {
+	background: #fff url(../img/orange-cola.svg) no-repeat 0.8em center/ 2em;
+	padding-left: 38px;
+}
+.get-violet {
+	background: #fff url(../img/purple-cola.svg) no-repeat 0.8em center/ 2em;
+	padding-left: 38px;
+}
